@@ -1,0 +1,54 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #F0F2F5;
+    height: 100%;
+    max-width: 1440px;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.425);
+}
+
+.translate-icon{
+    color: #bec3c4;
+    font-size: 110px;
+    font-weight: 600;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+h1, p{
+    color: #383838;
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    /* font-size: 50px; */
+    font-size: 40px;
+}
+
+p{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 300;
+    /* font-size: 25px; */
+    font-size: 20px;
+}
+
+.pages-buttom-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}

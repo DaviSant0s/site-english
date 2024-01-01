@@ -1,0 +1,10 @@
+.App-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    /* background-color: rgba(0, 0, 0, 0.411); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
