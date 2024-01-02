@@ -1,0 +1,34 @@
+.header-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr;
+    background-color: #13a49dca;
+    width: 100%;
+    height: 38px;
+}
+
+.header-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out
+}
+
+.header-container > div:hover{
+    background-color: #13a49d;
+}
+
+.header-container > div > span{
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.header-container > .home > .home-icon{
+    font-size: 21px;
+}
