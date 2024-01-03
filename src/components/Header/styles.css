@@ -21,7 +21,7 @@
     color: #464646;
     font-size: 16px;
 
-    border-radius: 8px;
+    border-radius: 2px;
 
     transition: all 0.2s ease-in-out;
 
@@ -30,8 +30,9 @@
 }
 
 .header-content > .link-page:hover{
-    background-color: #13a49d7d;
-    color: white;
+    background-color: #e3e5e7;
+    color: #0e908a;
+    font-weight: 500;
 }
 
 .header-content > .home > .home-icon{
