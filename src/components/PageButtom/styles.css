@@ -1,6 +1,8 @@
 :root {
-    --widthPageButtom: 212px;
-    --heightPageButtom: 208px;
+
+    --widthPageButtom: 165px;
+    --heightPageButtom: 168px;
+
     --fontSizeIcon: calc(var(--heightPageButtom) * 0.20);
     --fontSizeName: calc(var(--heightPageButtom) * 0.08);
 }
@@ -9,7 +11,7 @@
     background-color: transparent;
     width: var(--widthPageButtom);
     height: var(--heightPageButtom);
-    border-radius: 20px;
+    border-radius: 15px;
     outline: 1px solid #d1d1d1;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.422);
 
@@ -34,7 +36,7 @@
 
 .PageButtom-icon{
     background-color: #dae2e3;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .PageButtom-icon > .icon{
@@ -45,7 +47,7 @@
 
 .PageButtom-name{
     background-color: white;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .PageButtom-name > div{
