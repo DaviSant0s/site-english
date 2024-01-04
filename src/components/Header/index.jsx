@@ -8,7 +8,7 @@ export default function Header() {
 
             </div>
             <div className='home link-page'>
-                <span class="material-symbols-outlined home-icon">cottage</span>
+                <span className="material-symbols-outlined home-icon">cottage</span>
             </div>
             <div className='word link-page'>
                 <span>Words</span>
