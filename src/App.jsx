@@ -1,14 +1,14 @@
 import Home from "./pages/Home";
 import './App.css';
 import Header from "./components/Header";
-import InsertWords from "./pages/InsertWords";
+import WordsForm from "./pages/WordsForm";
 
 function App() {
     return (
       <div className="App-container">
         <Header/>
         {/* <Home/> */}
-        <InsertWords/>
+        <WordsForm/>
       </div>
     );
   }
