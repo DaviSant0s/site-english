@@ -1,4 +1,5 @@
 import ButtomInsertImage from '../../components/ButtomInsertImage';
+import ButtomSubmit from '../../components/ButtomSubmit';
 import Container from '../../components/Container';
 import Input from '../../components/Input';
 import Logo from '../../components/Logo';
@@ -32,7 +33,11 @@ export default function WordsForm() {
               id={'imagefile'}
               icon={'image'}
               label={'Inserir Imagem'}
-              required={''}
+              required={'on'}
+            />
+
+            <ButtomSubmit
+              value={'Enviar'}
             />
 
           </form>
