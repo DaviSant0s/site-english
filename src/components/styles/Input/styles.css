@@ -14,7 +14,13 @@
     font-size: 0.9em;
 
     caret-color: #14a79f;
-    color: #151515
+    color: #151515;
+
+    -webkit-user-select: none;
+    user-select: none;
+
+    
+
 }
 
 .input-component{

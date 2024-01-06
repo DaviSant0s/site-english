@@ -8,7 +8,7 @@
 }
 
 .ButtomInsertImage-component:hover{
-    background-color: #e2e2e2;
+    box-shadow: 0px 0px 6px #c6c6c69f;
 }
 
 .ButtomInsertImage-component > input{
