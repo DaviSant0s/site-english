@@ -17,3 +17,17 @@
     gap: 10px;
 }
 
+@media screen and (max-width: 412px){
+    .TextForm-container form{
+        width: 90%;
+        
+    }
+}
+
+@media screen and (min-width: 413px){
+    .TextForm-container form{
+        width: 80%;
+       
+    }
+}
+

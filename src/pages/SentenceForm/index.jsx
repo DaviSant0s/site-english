@@ -8,7 +8,7 @@ import './styles.css';
 export default function SentenceForm() {
   return (
     <div className='SentenceForm-container'>
-        <Container width={'350px'}>
+        <Container>
             <Logo/>
             <form action="#" method="post">
                 <Textarea

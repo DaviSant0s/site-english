@@ -18,17 +18,23 @@ export default function WordsForm() {
               id={'word'} 
               placeholder={'Digitar palavra'} 
               autoComplete={'off'} 
+
+              width={'100%'}
             /> 
 
             <Textarea
               name={'sentence'}
               id={'sentence'}
               placeholder={'Digitar frase'}
+
+              width={'100%'}
             />
 
             <ButtomInsertImage
               name={'imagefile'}
               id={'imagefile'}
+
+              width={'100%'}
             />
 
             <ButtomSubmit

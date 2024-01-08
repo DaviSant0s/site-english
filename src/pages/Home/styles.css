@@ -16,23 +16,66 @@ h1{
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
-    /* font-size: 50px; */
-    font-size: 40px;
 }
 
 p{
     margin-top: 15px;
     text-align: center;
     font-weight: 300;
-    /* font-size: 25px; */
-    font-size: 20px;
 }
 
 .pages-buttom-container{
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 40px;
     margin-top: 40px;
+}
+
+@media screen and (max-width: 412px){
+    h1{
+        font-size: 25px;
+    }
+
+    p{
+        font-size: 10px;
+        width: 80%;
+    }
+
+    .pages-buttom-container{
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 578px) and (min-width: 413px){
+
+    h1{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .pages-buttom-container{
+        gap: 20px;
+    }
+
+}
+
+@media screen and (min-width: 579px){
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 20px;
+        width: 70%;
+    }
+
+    .pages-buttom-container{
+        gap: 40px;
+    }
 }

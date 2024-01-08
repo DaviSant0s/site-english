@@ -1,11 +1,3 @@
-:root {
-
-    --widthPageButtom: 165px;
-    --heightPageButtom: 168px;
-
-    --fontSizeIcon: calc(var(--heightPageButtom) * 0.20);
-    --fontSizeName: calc(var(--heightPageButtom) * 0.08);
-}
 
 .PageButtom-container{
     background-color: transparent;
@@ -77,4 +69,41 @@
 .PageButtom-name .arrow-icon{
     display: flex;
     align-items: center;
+}
+
+
+
+@media screen and (max-width: 412px){
+    :root {
+
+        --widthPageButtom: 105px;
+        --heightPageButtom: 108px;
+    
+        --fontSizeIcon: calc(var(--heightPageButtom) * 0.20);
+        --fontSizeName: calc(var(--heightPageButtom) * 0.08);
+    }
+
+}
+
+@media screen and (max-width: 578px) and (min-width: 413px){
+    :root {
+
+        --widthPageButtom: 125px;
+        --heightPageButtom: 128px;
+    
+        --fontSizeIcon: calc(var(--heightPageButtom) * 0.20);
+        --fontSizeName: calc(var(--heightPageButtom) * 0.08);
+    }
+
+}
+
+@media screen and (min-width: 579px){
+    :root {
+
+        --widthPageButtom: 165px;
+        --heightPageButtom: 168px;
+    
+        --fontSizeIcon: calc(var(--heightPageButtom) * 0.20);
+        --fontSizeName: calc(var(--heightPageButtom) * 0.08);
+    }
 }

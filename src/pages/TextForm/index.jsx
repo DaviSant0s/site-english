@@ -8,7 +8,7 @@ import './styles.css';
 export default function TextForm() {
   return (
     <div className='TextForm-container'>
-        <Container width={'80%'} height={'550px'}>
+        <Container width={'80%'}>
             <Logo size={'90px'}/>
             <form action="" method="post">
                 <Input
@@ -33,3 +33,6 @@ export default function TextForm() {
     </div>
   )
 }
+
+
+/* height={'550px'} */
