@@ -1,6 +1,14 @@
+:root {
+
+    --widthPageButtom: 165px;
+    --heightPageButtom: 168px;
+
+    --fontSizeIcon: calc(var(--heightPageButtom) * 0.20);
+    --fontSizeName: calc(var(--heightPageButtom) * 0.08);
+}
+
 
 .PageButtom-container{
-    background-color: transparent;
     width: var(--widthPageButtom);
     height: var(--heightPageButtom);
     border-radius: 15px;
@@ -72,38 +80,66 @@
 }
 
 
-
-@media screen and (max-width: 412px){
-    :root {
-
-        --widthPageButtom: 105px;
-        --heightPageButtom: 108px;
-    
-        --fontSizeIcon: calc(var(--heightPageButtom) * 0.20);
-        --fontSizeName: calc(var(--heightPageButtom) * 0.08);
+@media screen and (max-width: 630px){
+    :root{
+        --widthPageButtom: 145px;
+        --heightPageButtom: 148px;
     }
-
+   
 }
 
-@media screen and (max-width: 578px) and (min-width: 413px){
-    :root {
+@media screen and (max-width: 594px){
+    :root{
+        --widthPageButtom: 135px;
+        --heightPageButtom: 138px;
+    }
+    
+}
 
+@media screen and (max-width: 470px){
+    :root{
         --widthPageButtom: 125px;
         --heightPageButtom: 128px;
+    }
+   
+}
+
+@media screen and (max-width: 440px){
+    :root{
+        --widthPageButtom: 115px;
+        --heightPageButtom: 118px;
+    }
     
-        --fontSizeIcon: calc(var(--heightPageButtom) * 0.20);
-        --fontSizeName: calc(var(--heightPageButtom) * 0.08);
+}
+
+@media screen and (max-width: 390px){
+    :root{
+        --widthPageButtom: 105px;
+        --heightPageButtom: 108px;
     }
 
 }
 
-@media screen and (min-width: 579px){
-    :root {
-
-        --widthPageButtom: 165px;
-        --heightPageButtom: 168px;
-    
-        --fontSizeIcon: calc(var(--heightPageButtom) * 0.20);
-        --fontSizeName: calc(var(--heightPageButtom) * 0.08);
+@media screen and (max-width: 360px){
+    :root{
+        --widthPageButtom: 95px;
+        --heightPageButtom: 98px;
     }
+
+}
+
+@media screen and (max-width: 330px){
+    :root{
+        --widthPageButtom: 85px;
+        --heightPageButtom: 88px;
+    }
+
+}
+
+@media screen and (max-width: 290px){
+    :root{
+        --widthPageButtom: 75px;
+        --heightPageButtom: 78px;
+    }
+
 }

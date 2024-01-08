@@ -11,20 +11,6 @@
     padding-top: 10px;
     padding-bottom: 20px;
     gap: 20px;
-}
 
-
-
-@media screen and (max-width: 412px){
-    .container{
-        width: 90%;
-       /*  height: 550px; */
-    }
-}
-
-@media screen and (min-width: 413px){
-    .container{
-        width: 450px;
-        /* height: 550px; */
-    }
+    width: 450px;
 }

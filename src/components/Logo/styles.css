@@ -6,11 +6,18 @@
 
     -webkit-user-select: none;
     user-select: none;
+
 }
 
-@media screen and (max-height: 590px){
+
+@media screen and (max-height: 540px){
     .translate-icon{
-        display: none;
-        
+        font-size: 90px;
+    }
+}
+
+@media screen and (max-height: 450px){
+    .translate-icon{
+        font-size: 70px;
     }
 }

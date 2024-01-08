@@ -1,13 +1,14 @@
 .header-container{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 478px 1fr;
     width: 100%;
     height: var(--heightHeader);
+    padding-top: 5px;
 }
 
 .header-content{
     display: grid;
-    grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr  0.25fr;
     gap: 10px;
 }
 
@@ -26,6 +27,7 @@
 
     -webkit-user-select: none;
     user-select: none;
+
 }
 
 .header-content > .link-page:hover{
@@ -35,4 +37,16 @@
 
 .header-content > .home > .home-icon{
     font-size: 22px;
+}
+
+
+
+@media screen and (max-width: 478px){
+    .header-container{
+        grid-template-columns: 1fr 0px;
+    }
+
+    .header-content{
+        grid-template-columns: 0fr 1fr 1fr 1fr 1fr  0.25fr;
+    }
 }
