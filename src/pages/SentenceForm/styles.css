@@ -1,15 +1,25 @@
-.WordsForm-container{
+.SentenceForm-container{
     width: 100%;
     height: calc(100vh - var(--heightHeader));
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.WordsForm-container form{
+.SentenceForm-container form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+
+    width: 85%;
 }
+
+@media screen and (min-width: 375px){
+
+}
+
+
+

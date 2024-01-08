@@ -1,9 +1,8 @@
 .header-container{
-    margin-top: 5px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     width: 100%;
-    height: 30px;
+    height: var(--heightHeader);
 }
 
 .header-content{

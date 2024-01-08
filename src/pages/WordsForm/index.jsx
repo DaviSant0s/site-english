@@ -9,7 +9,7 @@ import './styles.css';
 export default function WordsForm() {
   return (
     <div className='WordsForm-container'>
-        <Container width={'450px'} height={'550px'} gap={'20px'}>
+        <Container>
           <Logo/>
           <form action="#" method="post">
             <Input 
@@ -18,22 +18,17 @@ export default function WordsForm() {
               id={'word'} 
               placeholder={'Digitar palavra'} 
               autoComplete={'off'} 
-              required={'on'}
             /> 
 
             <Textarea
               name={'sentence'}
               id={'sentence'}
               placeholder={'Digitar frase'}
-              required={'on'}
             />
 
             <ButtomInsertImage
               name={'imagefile'}
               id={'imagefile'}
-              icon={'image'}
-              label={'Inserir Imagem'}
-              required={'on'}
             />
 
             <ButtomSubmit

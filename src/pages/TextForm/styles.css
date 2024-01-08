@@ -1,15 +1,19 @@
-.WordsForm-container{
+.TextForm-container{
     width: 100%;
     height: calc(100vh - var(--heightHeader));
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: auto;
 }
 
-.WordsForm-container form{
+.TextForm-container form{
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
+
