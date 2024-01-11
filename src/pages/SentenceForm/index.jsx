@@ -8,9 +8,9 @@ import './styles.css';
 export default function SentenceForm() {
   return (
     <div className='SentenceForm-container'>
-        <Container>
-            <Logo/>
+        <Container id={'containerSentenceForm'} height={'80%'}>
             <form action="#" method="post">
+                <Logo id={'logoSentenceForm'}/>
                 <Textarea
                     placeholder={'Digitar frase'}
                     name={'sentence'}

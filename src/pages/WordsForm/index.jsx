@@ -9,9 +9,9 @@ import './styles.css';
 export default function WordsForm() {
   return (
     <div className='WordsForm-container'>
-        <Container>
-          <Logo/>
+        <Container id={'containerWordForm'}>
           <form action="#" method="post">
+            <Logo id={'logoWordsForm'}/>
             <Input 
               type={'text'} 
               name={'word'} 

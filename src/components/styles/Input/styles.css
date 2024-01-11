@@ -29,7 +29,7 @@
 
 .textarea-component{
     resize: none;
-    padding: 10px;
+    padding: 13px;
 }
 
 .input-component::placeholder , .textarea-component::placeholder{

@@ -10,10 +10,10 @@ function App() {
     return (
       <div className="App-container">
         <Header/>
-        {/* <Home/> */}
+        <Home/>
         {/* <WordsForm/> */}
         {/* <SentenceForm/> */}
-        <TextForm/>
+        {/* <TextForm/> */}
       </div>
     );
   }

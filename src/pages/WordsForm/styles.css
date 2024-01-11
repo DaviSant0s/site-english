@@ -7,11 +7,35 @@
 }
 
 .WordsForm-container form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 110px 40px 2fr 1.7fr 40px;
     gap: 10px;
 
-    width: 90%;
+    width: 80%;
+    height: 100%;
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#logoWordsForm{
+    text-align: center;
+}
+
+@media screen and (max-height: 643px){
+    #logoWordsForm{
+        font-size: 70px;
+    }
+
+    .WordsForm-container form{
+        grid-template-rows: 70px 40px 2fr 1.7fr 40px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    #containerWordForm{
+        width: 80%;
+    }
 }

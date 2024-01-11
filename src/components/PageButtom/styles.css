@@ -1,7 +1,8 @@
 :root {
 
     --widthPageButtom: 165px;
-    --heightPageButtom: 168px;
+    /* --heightPageButtom: 168px; */
+    --heightPageButtom: calc(var(--widthPageButtom) * 1.018);
 
     --fontSizeIcon: calc(var(--heightPageButtom) * 0.20);
     --fontSizeName: calc(var(--heightPageButtom) * 0.08);

@@ -9,8 +9,8 @@ export default function TextForm() {
   return (
     <div className='TextForm-container'>
         <Container width={'80%'}>
-            <Logo size={'90px'}/>
             <form action="" method="post">
+                <Logo size={'90px'} id={'logoInputText'}/>
                 <Input
                     placeholder={'Título'}
                     name={'text-title'}
@@ -24,10 +24,9 @@ export default function TextForm() {
                     placeholder={'Inserir Texto'}
 
                     width={'100%'}
-                    height={'300px'}
                 />
 
-                <ButtomSubmit width={'200px'}/>
+                <ButtomSubmit width={'200px'} id={'buttomInputText'}/>
             </form>
         </Container>
     </div>
