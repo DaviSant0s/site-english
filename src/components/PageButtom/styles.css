@@ -8,6 +8,12 @@
     --fontSizeName: calc(var(--heightPageButtom) * 0.08);
 }
 
+.button-pageButtom{
+    appearance: none;
+    border-radius: 15px;
+    border: none;
+}
+
 
 .PageButtom-container{
     width: var(--widthPageButtom);

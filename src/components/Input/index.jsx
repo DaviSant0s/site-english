@@ -1,9 +1,9 @@
 import './styles.css';
 import '../styles/Input/styles.css';
 
-export default function Input({width, height, type, name, id, placeholder, autoComplete, required }) {
+export default function Input({width, height, type, name, id, placeholder, autoComplete, required, idContainer }) {
   return (
-        <div style={{width: `${width}`, height: `${height}`}} className='input-container'>
+        <div style={{width: `${width}`, height: `${height}`}} className='input-container' id={idContainer}>
             <input 
                 className='input-component'
                 type={type} 

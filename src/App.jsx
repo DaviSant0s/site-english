@@ -5,15 +5,17 @@ import WordsForm from "./pages/WordsForm";
 import SentenceForm from "./pages/SentenceForm";
 import TextForm from "./pages/TextForm";
 import Container from "./components/Container";
+import WordPreview from "./pages/WordPreview";
 
 function App() {
     return (
       <div className="App-container">
         <Header/>
-        <Home/>
+        {/* <Home/> */}
         {/* <WordsForm/> */}
         {/* <SentenceForm/> */}
         {/* <TextForm/> */}
+        <WordPreview/>
       </div>
     );
   }
