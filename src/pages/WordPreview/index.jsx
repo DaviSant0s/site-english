@@ -15,10 +15,15 @@ export default function WordPreview() {
         />
         <Container id={'wordPreview-containerComponent'}>
             <div className='word-image-wordPreview'>
-                <div className='icon-audio-wordPreview'><span className="material-symbols-outlined">volume_up</span></div>
-                <div className='word-wordPreview'>Microwave</div>
+
+                <span className="material-symbols-outlined icon-audio-wordPreview">volume_up</span>
+
+                <h1 className='word-wordPreview'>Microwave</h1>
+
                 <div className='image-wordPreview'><img src="https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg" alt="microwave" /></div>
+
                 <div className='progressInput-wordPreview'>barra</div>
+                
             </div>
             <div className='word-sentence-wordPreview'>
                 frase

@@ -9,11 +9,11 @@
 
 }
 
-h1, p{
+.title-home, .description-home{
     color: #383838;
 }
 
-h1{
+.title-home{
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
@@ -22,7 +22,7 @@ h1{
     width: 920px;
 }
 
-p{
+.description-home{
     margin-top: 15px;
     text-align: center;
     font-weight: 300;
@@ -48,58 +48,58 @@ p{
 
 @media screen and (max-width: 960px){
     
-    h1{
+    .title-home{
         width: 600px;
     }
 
-    p{
+    .description-home{
         font-size: 17px;
         width: 90%;
     }
 }
 
 @media screen and (max-width: 650px){
-    h1{
+    .title-home{
         font-size: 35px;
         width: 85%;
     }
 
-    p{
+    .description-home{
         font-size: 17px;
     }
 }
 
 @media screen and (max-width: 530px){
-    h1{
+    .title-home{
         font-size: 30px;
         width: 85%;
     }
 
-    p{  
+    .description-home{  
         font-size: 15px;
         width: 90%;
     }
 }
 
 @media screen and (max-width: 420px){
-    h1{
+    .title-home{
         font-size: 28px;
     }
 
-    p{
+    .description-home{
         width: 90%;
     }
 }
 
 @media screen and (max-width: 390px){
-    h1{
+    .title-home{
         font-size: 26px;
     }
 
 }
 
 @media screen and (max-width: 365px){
-    h1{
+    .title-home{
         font-size: 23px;
     }
 }
