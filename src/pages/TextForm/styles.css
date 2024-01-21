@@ -1,0 +1,28 @@
+.TextForm-container{
+    width: 100%;
+    height: calc(100vh - var(--heightHeader));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TextForm-container form{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 40px 2fr 40px;
+    gap: 10px;
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+#logoInputText{
+    text-align: center;
+}
+
+#buttomInputText{
+    margin: auto;
+}

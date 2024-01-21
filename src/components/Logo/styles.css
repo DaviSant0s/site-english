@@ -1,0 +1,23 @@
+.translate-icon{
+    font-weight: 600;
+
+    color: #bec3c4;
+    font-size: 110px;
+
+    -webkit-user-select: none;
+    user-select: none;
+
+}
+
+
+@media screen and (max-height: 540px){
+    .translate-icon{
+        font-size: 90px;
+    }
+}
+
+@media screen and (max-height: 450px){
+    .translate-icon{
+        font-size: 70px;
+    }
+}
