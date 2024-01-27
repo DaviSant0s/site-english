@@ -12,4 +12,7 @@ body{
 :root{
   --heightHeader:  40px;
   --inputColor: #444546;
+  --titleColor: #383838;
+  --iconsColor: #696d72;
+  --iconHover: #37938ed2;
 }
