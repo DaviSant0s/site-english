@@ -13,6 +13,7 @@ body{
   --heightHeader:  40px;
   --inputColor: #444546;
   --titleColor: #383838;
-  --iconsColor: #696d72;
+  --iconsColor: #383838e1;
+  --backgroundIcon: #f0f2f5;
   --iconHover: #37938ed2;
 }

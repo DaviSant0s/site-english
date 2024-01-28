@@ -1,4 +1,8 @@
-.icon-audio-wordPreview, .image-wordPreview, br{
+.icon-audio-wordPreview, 
+.image-wordPreview, 
+.arrow-image-wordPreview-left, 
+.arrow-image-wordPreview-right{
+
     -webkit-user-select: none;
     user-select: none;
 
@@ -27,7 +31,8 @@
 
 #wordPreview-containerComponent{
     width: 1000px;
-    height: 500px;
+    height: 400px;
+    /* height: 500px; */
     background-color: white;
     border: 2px solid #c6c6c66c;
     box-shadow: 0px 0px 10px #d1d3d5;
@@ -59,31 +64,64 @@
 
 .icon-audio-wordPreview{
     position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 2em;
+    top: 5px;
+    left: 5px;
+    font-size: 1.8em;
+    padding: 9px;
     color: var(--iconsColor);
     font-weight: 800;
     cursor: pointer;
+    border-radius: 50%;
     transition: all 0.15s ease-in-out;
 }
 
 .icon-audio-wordPreview:hover{
-    color: var(--iconHover);
+    background-color: var(--backgroundIcon);
+    color: #525557;
 }
 
 .title-wordPreview{
     color: var(--titleColor);
-    font-size: 2.5em;
+    font-size: 3em;
+    margin-bottom: 15px;
 
 }
 
+.image-wordPreview-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-image-wordPreview-left, .arrow-image-wordPreview-right{
+    cursor: pointer;
+    color: #383838b5;
+    border-radius: 50%;
+    font-size: 2em;
+    padding: 3px;
+    font-weight: 600;
+    transition: all 0.15s ease-in-out;
+
+}
+
+.arrow-image-wordPreview-left:hover, .arrow-image-wordPreview-right:hover{
+    background-color: var(--backgroundIcon);
+}
+
+.arrow-image-wordPreview-left{
+    margin-right: 5px;
+}
+
+.arrow-image-wordPreview-right{
+    margin-left: 5px;
+}
+
 .image-wordPreview{
-    width: 350px;
-    height: 200px;
-    border-radius: 15px;
+    width: 250px;
+    height: 180px;
     overflow: hidden;
-    border: 1px solid rgb(216, 216, 216);
+    /* border: 1px solid rgb(216, 216, 216); */
+    background-color: transparent;
 
     pointer-events: none;
 }
@@ -93,7 +131,28 @@
     height: 100%;
     object-fit: contain;
 }
-
 .progressInput-wordPreview{
-    background-color: chocolate;
+    width: 250px;
+    background-color: transparent;
+    margin-top: 10px;
+}
+.progressInput-wordPreview > input{
+    display: block;
+    width: 80%;
+    height: 8px;
+    -webkit-appearance: none;
+    background-color: #9f8abd;
+    background: #e7eaeb;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.progressInput-wordPreview > input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 0 50% 50% 0;
+    background-color: #9f8abd;
+    box-shadow: -407px 0 0 400px #9f8abd;
 }
