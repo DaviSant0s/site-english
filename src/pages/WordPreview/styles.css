@@ -64,20 +64,38 @@
 
 .icon-audio-wordPreview{
     position: absolute;
-    top: 5px;
-    left: 5px;
-    font-size: 1.8em;
-    padding: 9px;
-    color: var(--iconsColor);
-    font-weight: 800;
+    top: 3px;
+    left: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
     cursor: pointer;
-    border-radius: 50%;
-    transition: all 0.15s ease-in-out;
+}
+
+.icon-audio-wordPreview > span{
+    font-size: 1.8em;
+    font-weight: 800;
+    border-radius: 50px;
+    color: var(--iconsColor);
+}
+
+/* transitions */
+.icon-audio-wordPreview, span.icon-audio-wordPreview > span{
+    transition-duration: 0.18s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color, transform;
+}
+
+
+.icon-audio-wordPreview > span:hover{
+    transform: scale(1.1);
 }
 
 .icon-audio-wordPreview:hover{
     background-color: var(--backgroundIcon);
-    color: #525557;
 }
 
 .title-wordPreview{
@@ -117,24 +135,31 @@
 }
 
 .image-wordPreview{
-    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    /* width: 250px; */
     height: 180px;
     overflow: hidden;
-    /* border: 1px solid rgb(216, 216, 216); */
-    background-color: transparent;
-
-    pointer-events: none;
+    
+    /* loadin animation */
+    /* border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px; */
+    /* background-color: rgb(241, 241, 241); */
 }
+
 
 .image-wordPreview > img{
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
+
+
 .progressInput-wordPreview{
     width: 250px;
-    background-color: transparent;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .progressInput-wordPreview > input{
     display: block;

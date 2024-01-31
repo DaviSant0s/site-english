@@ -1,0 +1,30 @@
+/* loading animation */
+
+@keyframes cicleRotate{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 4px solid rgb(207, 207, 207);
+
+    border-radius: 50%;
+    border-bottom-color: rgb(168, 168, 168) ;
+    /* border-bottom-color: #2248CA ; */
+    
+    
+    animation-name: cicleRotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+/* fim loading animation */
