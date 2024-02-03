@@ -2,14 +2,13 @@ import { useEffect, useState } from 'react';
 import Container from '../../components/Container';
 import Input from '../../components/Input';
 import './styles.css';
-import Loading from '../../components/Loading';
-import audioteste from '../../assets/audio.mp3';
+import Button from '../../components/Button';
 const imagesObject = [
     { 
         id: 1,
         name: 'Microwave',
         link:' https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg',
-        sentence: 'He became responsible for the design of microwave mixers, needed in most microwave radar systems He became responsible for the design of microwave mixers needed in most microwave radar systems.',
+        sentence: 'He became responsible for the design of microwave mixers, needed in most microwave radar systems.',
     },
 
     
@@ -111,7 +110,8 @@ export default function WordPreview() {
                 <div className='word-sentence-wordPreview-container'>
                     <div className='word-sentence-wordPreview-content'>
                         <div>{imagesObject[indexImage].sentence}</div>
-                        <audio className='audio-sentence-wordPreview' src={audioteste} controls autoPlay></audio>
+                        <audio className='audio-sentence-wordPreview' src='' controls autoPlay></audio>
+                        <Button id={'ButtonTranslate-wordPreview'} />
                     </div>
                 </div>
             </div>

@@ -1,0 +1,26 @@
+.button-component{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+
+    width: 100px;
+    height: 32px;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    border-radius: 50px;
+    background-color: #9f8abd;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    outline: 1px solid #d1d1d1a7;
+}
+
+.button-component-icon{
+    font-size: 13px;
+    font-weight: 500;
+}
