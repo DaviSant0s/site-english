@@ -3,6 +3,7 @@ import Container from '../../components/Container';
 import Input from '../../components/Input';
 import './styles.css';
 import Button from '../../components/Button';
+import InputSearch from '../../components/InputSearch';
 const imagesObject = [
     { 
         id: 1,
@@ -76,14 +77,12 @@ export default function WordPreview() {
 
   return (
     <div className='wordPreview-container'>
-        <Input
+        <InputSearch
             type={'text'}
-            name={'wordPreviewInput'}
-            id={'wordPreviewInput'}
             placeholder={'Search'}
-            autoComplete={'off'}
-            idContainer={'wordPreviewInput-container'}
+            iconSide='left'
         />
+        
         <Container id={'wordPreview-containerComponent'}>
             <span onClick={handleClickAudio} className='icon-audio-wordPreview'>
                 <span className="material-symbols-outlined ">
@@ -119,5 +118,3 @@ export default function WordPreview() {
     </div>
   )
 }
-
-{/* <img src="https://www.sofacasa.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/u/sui_a_bordado_138.jpg" alt="microwave" /> */}

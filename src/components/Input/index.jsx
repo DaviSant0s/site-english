@@ -1,5 +1,5 @@
-import './styles.css';
 import '../styles/Input/styles.css';
+import './styles.css';
 
 export default function Input({width, height, type, name, id, placeholder, autoComplete, required, idContainer }) {
   return (
