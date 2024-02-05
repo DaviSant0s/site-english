@@ -3,10 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    height: calc(100vh - var(--heightHeader));
-    width: 100%;
-
 }
 
 .title-home, .description-home{

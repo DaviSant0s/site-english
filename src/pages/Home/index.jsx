@@ -4,7 +4,7 @@ import './styles.css';
 
 export default function Home() {
   return (
-    <div className='home-container'>
+    <div className='home-container defaultContainerDimension'>
       <Logo/>
       <h1 className='title-home'>Deixe seu aprendizado em inglês mais organizado! </h1>
       <p className='description-home'>Insira as palavras, textos e imagens que você quer aprender no sistema, e tenha um ambiente simplificado para quando você quiser revisar e fixar ainda mais o que você estuda em inglês.  </p>

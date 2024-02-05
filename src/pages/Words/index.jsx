@@ -1,0 +1,115 @@
+import InputSearch from '../../components/InputSearch';
+import WordCard from '../../components/WordCard';
+import './styles.css';
+
+export default function Words() {
+  return (
+    <div className='words-container defaultContainerDimension'>
+      <h1 className='wordTitle mainTitle'>Words</h1>
+      <div className='words-content'>
+        <InputSearch
+          placeholder={'Search'}
+          idContainer={'words-input-container'}
+        />
+        <div className='words-grid-container'>
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+          <WordCard
+            title={'Microwave'}
+            image={'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg'}
+          />
+        </div>
+      </div>
+    </div>
+  )
+}

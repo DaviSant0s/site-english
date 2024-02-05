@@ -1,7 +1,4 @@
 .SentenceForm-container{
-    width: 100%;
-    height: calc(100vh - var(--heightHeader));
-
     display: flex;
     justify-content: center;
     align-items: center;

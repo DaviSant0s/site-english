@@ -7,7 +7,7 @@ import './styles.css';
 
 export default function TextForm() {
   return (
-    <div className='TextForm-container'>
+    <div className='TextForm-container defaultContainerDimension'>
         <Container width={'80%'}>
             <form action="" method="post">
                 <Logo size={'90px'} id={'logoInputText'}/>

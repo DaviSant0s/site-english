@@ -9,8 +9,6 @@
 }
 
 .wordPreview-container{
-    width: 100%;
-    height: calc(100vh - var(--heightHeader));
     display: flex;
     flex-direction: column;
     justify-content: center;

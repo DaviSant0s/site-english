@@ -7,7 +7,7 @@ import './styles.css';
 
 export default function SentenceForm() {
   return (
-    <div className='SentenceForm-container'>
+    <div className='SentenceForm-container defaultContainerDimension'>
         <Container id={'containerSentenceForm'} height={'80%'}>
             <form action="#" method="post">
                 <Logo id={'logoSentenceForm'}/>

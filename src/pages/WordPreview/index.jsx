@@ -8,7 +8,7 @@ const imagesObject = [
     { 
         id: 1,
         name: 'Microwave',
-        link:' https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg',
+        link: 'https://i.zst.com.br/thumbs/12/12/2e/-542064200.jpg',
         sentence: 'He became responsible for the design of microwave mixers, needed in most microwave radar systems.',
     },
 
@@ -76,7 +76,7 @@ export default function WordPreview() {
 
 
   return (
-    <div className='wordPreview-container'>
+    <div className='wordPreview-container defaultContainerDimension'>
         <InputSearch
             type={'text'}
             placeholder={'Search'}
