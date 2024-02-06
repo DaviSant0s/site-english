@@ -1,4 +1,4 @@
-import InputSearch from '../../components/InputSearch';
+import FilterInput from '../../components/FilterInput';
 import WordCard from '../../components/WordCard';
 import './styles.css';
 
@@ -7,10 +7,12 @@ export default function Words() {
     <div className='words-container defaultContainerDimension'>
       <h1 className='wordTitle mainTitle'>Words</h1>
       <div className='words-content'>
-        <InputSearch
+        
+        <FilterInput
           placeholder={'Search'}
           idContainer={'words-input-container'}
         />
+
         <div className='words-grid-container'>
           <WordCard
             title={'Microwave'}

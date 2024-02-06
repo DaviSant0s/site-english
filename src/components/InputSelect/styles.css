@@ -1,0 +1,66 @@
+.inputSelect-container{
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    gap: 10px;
+
+    background-color: white;
+    border: 1px solid #c6c6c69f;
+    box-shadow: 0px 0px 10px #d1d3d5;
+
+    overflow: hidden;
+}
+
+.inputSelect-name-selected, .inputSelect-icon-arrow-container{
+    height: 100%;
+    color: #444546;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.inputSelect-name-selected{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 10px;
+    font-size: 0.8em;
+    overflow-x: hidden;
+
+}
+
+.inputSelect-icon-arrow-container{
+    background-color: #d1d3d5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease-out;
+}
+
+.inputSelect-icon-arrow-container:hover{
+    background-color: #b2b4b5eb;
+}
+
+.inputSelect-icon-arrow-container:active{
+    background-color: #dcdee0;
+}
+
+.inputSelect-arrow{
+    background-color: transparent;
+    position: absolute;
+    font-size: 1em;
+}
+
+
+.inputSelect-arrow-up{
+    top: 2px;
+}
+
+.inputSelect-arrow-down{
+    bottom: 2px;
+}
+
+
