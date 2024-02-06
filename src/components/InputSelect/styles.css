@@ -1,13 +1,21 @@
 .inputSelect-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px #d1d3d5;
+    background-color: white;
+    
+} 
+
+.inputSelect-content{
     display: grid;
     grid-template-columns: 1fr 40px;
     gap: 10px;
+    width: 100%;
+    height: 100%;
 
-    background-color: white;
-    border: 1px solid #c6c6c69f;
-    box-shadow: 0px 0px 10px #d1d3d5;
-
-    overflow: hidden;
+    outline: 1px solid #c6c6c69f;
 }
 
 .inputSelect-name-selected, .inputSelect-icon-arrow-container{
@@ -15,6 +23,7 @@
     color: #444546;
     -webkit-user-select: none;
     user-select: none;
+    cursor: pointer;
 }
 
 .inputSelect-name-selected{
@@ -25,7 +34,6 @@
     padding-left: 10px;
     font-size: 0.8em;
     overflow-x: hidden;
-
 }
 
 .inputSelect-icon-arrow-container{
@@ -35,7 +43,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    
 
     transition: background-color 0.2s ease-out;
 }
@@ -61,6 +69,56 @@
 
 .inputSelect-arrow-down{
     bottom: 2px;
+}
+
+.inputSelect-body-container{
+    position: absolute;
+    min-width: 100%;
+    max-height: 500%;
+    top: calc(100% + 10px) ;
+    background-color: white;
+    border: 1px solid #c6c6c69f;
+    box-shadow: 0px 0px 10px #d1d3d5;
+    padding: 10px;
+
+    overflow-y: auto;
+    
+}
+
+.inputSelect-body-container > ul > li {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+    list-style-type: none;
+    cursor: pointer;
+    border-radius: 3px;
+    height: 25px;
+    padding: 0px 5px 0px 5px;
+    font-size: 0.9em;
+    color: #444546;
+
+    -webkit-user-select: none;
+    user-select: none;
+
+    
+}
+
+.inputSelect-body-container > ul > li:hover{
+    background-color: #d1d3d583;
+
+}
+
+.inputSelect-body-container::-webkit-scrollbar{
+    display: none;
+}
+
+.inputSelect-body-container > ul{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 

@@ -31,7 +31,9 @@
     margin-bottom: 10px;
     width: 100%;
     
-    display: grid;
+    /* Alterar ********** */
+    display: none;
+    /* ******** */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
 
