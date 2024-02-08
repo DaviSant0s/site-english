@@ -2,6 +2,6 @@
     position: relative;
     background-color: transparent;
     display: grid;
-    grid-template-columns: 1fr 140px;
-    gap: 10px;
+    grid-template-columns: 1fr 142px;
+    gap: 5px;
 }

@@ -1,58 +1,74 @@
 import { useState } from 'react';
 import './styles.css';
-import { useEffect } from 'react';
 
-export default function InputSelect({width='140px', height='32px', radius='12px'}) {
-  const [bodySelect, setBodySelect] = useState(false);
-  const [ displaySelect, setDisplaySelect ] = useState('')
+export default function InputSelect({width, height, radius='12px', options=[], id}) {
+  const [ displaySelect, setDisplaySelect ] = useState('none');
+  const [ selectOption, setSelectOption ] = useState(options[0]);
 
-  const handleClickDisplayBody = () => {
-    setBodySelect(s => !s);
+  const handleChangeOption = (e) => {
+    setSelectOption(e.target.textContent);
+    setDisplaySelect('none')
+
   }
 
-  useEffect(() => {
-
+  const handleClickDisplayBody = () => {
     if(displaySelect === '') {
       setDisplaySelect('none')
     } else {
       setDisplaySelect('')
     }
-
-  }, [bodySelect]);
+    
+  }
 
   return (
 
 
-    <div className='inputSelect-container' style={{width: `${width}`, height: `${height}`, borderRadius: `${radius}`}}>
+    <div 
+      className='inputSelect-container' 
+      id={id}
+      style={{width: `${width}`, height: `${height}`, borderRadius: `${radius}px`}}>
 
-        <div onClick={handleClickDisplayBody} style={{borderRadius: `${radius}`}} className='inputSelect-content'>
-          <div className='inputSelect-name-selected' style={{borderRadius: `${radius} 0px 0px ${radius}`}}>All</div>
-          <div className='inputSelect-icon-arrow-container' style={{borderRadius: `0px ${radius} ${radius} 0px`}}>
-              <span class="material-symbols-outlined inputSelect-arrow inputSelect-arrow-up">
+        <div 
+          onClick={handleClickDisplayBody} 
+          style={{borderRadius: `${radius}px`}} 
+          className='inputSelect-content'
+          >
+
+
+          <div 
+            className='inputSelect-name-selected' 
+            style={{borderRadius: `${radius}px 0px 0px ${radius}px`}}
+          >
+            {selectOption}
+          </div>
+
+          <div 
+            className='inputSelect-icon-arrow-container' 
+            style={{ borderRadius: `0px ${radius}px ${radius}px 0px`}}
+          >
+              <span 
+              className="material-symbols-outlined inputSelect-arrow inputSelect-arrow-up">
                   expand_less
               </span>
-              <span class="material-symbols-outlined inputSelect-arrow inputSelect-arrow-down">
+              
+              <span className="material-symbols-outlined inputSelect-arrow    inputSelect-arrow-down">
                   keyboard_arrow_down
               </span>
+
           </div>
         </div>
 
-        <div className='inputSelect-body-container' style={{display: `${displaySelect}`, borderRadius: `${radius}`}}>
+        <div 
+        className='inputSelect-body-container' 
+        style={{display: `${displaySelect}`, borderRadius: `${radius * 0.7}px`}}>
+
           <ul>
-            <li>Objetos</li>
-            <li>Relacionamentos</li>
-            <li>Parentesco</li>
-            <li>profissões</li>
-            <li>animais</li>
-            <li>Relacionamentos</li>
-            <li>Parentesco</li>
-            <li>profissões</li>
-            <li>animais</li>
-            <li>Relacionamentos</li>
+            {options.map((option) => <li onClick={handleChangeOption} >{option}</li>)}
           </ul>
+
         </div>
         
     </div>
 
-  )
+)
 }

@@ -11,6 +11,7 @@ export default function Words() {
         <FilterInput
           placeholder={'Search'}
           idContainer={'words-input-container'}
+          idSelect={'words-input-select'}
         />
 
         <div className='words-grid-container'>
