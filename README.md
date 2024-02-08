@@ -1,8 +1,5 @@
-# React + Vite
+# Projeto - Site para organização do estudo de inglês
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esse site tem como objetivo organizar os estudos de quem está estudando inglês. E a idéia desse projeto veio pela necessidade que tive quando eu
+decidi estudar inglês por conta própria, mas eu não acha um site ou aplicativo gratuito para armazenar textos, frases, imagens e etc, qque eu estava usando para estudar o idioma, então eu decidi fazer o meu próprio.
+O site ainda está em desenvolvimento no monento.
