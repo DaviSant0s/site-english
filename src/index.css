@@ -31,6 +31,11 @@ body{
   text-shadow: 1px 1px 4px #869191d2;
 }
 
+.SelectNone{
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 
 /* Barra de Rolagem */
 

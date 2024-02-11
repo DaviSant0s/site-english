@@ -6,6 +6,7 @@ import WordPreview from '../pages/WordPreview';
 import Home from '../pages/Home';
 import Header from '../components/Header';
 import Words from '../pages/Words';
+import Texts from '../pages/Texts';
 
 
 export const RoutesApp = () => {
@@ -17,6 +18,7 @@ export const RoutesApp = () => {
                 <Route path='/SentenceForm' element={<SentenceForm />}/>
                 <Route path='/TextForm' element={<TextForm />}/>
                 <Route path='/Words' element={<Words/>}/>
+                <Route path='/Texts' element={<Texts/>}/>
                 <Route path='/WordPreview' element={<WordPreview />}/>
                 <Route path='/' exact element={<Home />}/>
             </Routes>

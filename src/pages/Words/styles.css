@@ -31,13 +31,17 @@
     width: 100%;
     
     display: grid;
-
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
 
 }
 
-@media screen and (max-width: 950px){
+#Words-card-image > .card-image-container{
+    width: 180px;
+    height: 130px;
+}
+
+@media screen and (max-width: 1020px){
     .words-grid-container{
         grid-template-columns: 1fr 1fr 1fr;
     }

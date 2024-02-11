@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import Container from '../../components/Container';
-import Input from '../../components/Input';
 import './styles.css';
 import Button from '../../components/Button';
 import InputSearch from '../../components/InputSearch';
+import Audio from '../../components/Audio';
 const imagesObject = [
     { 
         id: 1,
@@ -43,13 +43,8 @@ const imagesObject = [
 
 
 export default function WordPreview() {
-    const [ audio, setAudio ]  = useState(false);
     const [ indexImage, setIndexImage ] = useState(0);
     const [ image, setImage ] = useState(imagesObject[indexImage].link);
-
-    const handleClickAudio = () => {
-        setAudio(s => !s);
-    }
 
     const handleClickNextImage = () => {
         if (indexImage >= imagesObject.length - 1){
@@ -80,15 +75,17 @@ export default function WordPreview() {
         <InputSearch
             type={'text'}
             placeholder={'Search'}
-            iconSide='left'
+            iconSide='right'
         />
+
         
         <Container id={'wordPreview-containerComponent'}>
-            <span onClick={handleClickAudio} className='icon-audio-wordPreview'>
-                <span className="material-symbols-outlined ">
-                    {audio ? 'volume_up' : 'volume_off'}
-                </span>
-            </span>
+        <Audio 
+          position={'absolute'} 
+          top={'3px'} 
+          left={'3px'} 
+          fontSize={'1.8em'}
+        />
             <div className='wordPreview-content'>
 
                 

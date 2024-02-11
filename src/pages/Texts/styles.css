@@ -1,0 +1,33 @@
+.texts-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    overflow-y: auto;
+}
+
+.texts-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+}
+
+#texts-input-container{
+    width: 100%;
+    height: 30px;
+}
+
+.texts-grid-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+}
