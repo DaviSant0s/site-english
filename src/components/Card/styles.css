@@ -18,11 +18,12 @@
     
 }
 
-/* Image */
-
 .card-container:hover{
     box-shadow: 1px 1px 14px #a4a6a9;
 }
+
+
+/* Image */
 
 .image-card{
     gap: 5px;
@@ -56,11 +57,17 @@
 /* text */
 
 .text-card{
+    background-color: transparent;
     min-height: 100px;
+    padding-right: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .text-title{
-    font-size: 1.5em;
+    background-color: transparent;
+    font-size: 1.2em;
     font-weight: 700;
     color: var(--titleColor);
 }

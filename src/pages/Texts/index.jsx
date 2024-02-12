@@ -13,9 +13,65 @@ export default function Texts() {
           />
 
           <div className='texts-grid-container'>
-            <Card
-                
-              text={'O pequeno príncipe do davi araujo hsavdjhbsachdsvhjdsvbhm'}
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
+            />
+            <Card  
+              text={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
           </div>
         </div>

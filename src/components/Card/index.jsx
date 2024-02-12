@@ -2,7 +2,7 @@ import Audio from '../Audio';
 import './styles.css';
 import { Link } from 'react-router-dom';
 
-export default function Card({image, title, id, text, sentences}) {
+export default function Card({image=false, title, id, text=false, sentences}) {
   return (
     <div style={{position: 'relative'}}>
           <Audio 
@@ -24,7 +24,7 @@ export default function Card({image, title, id, text, sentences}) {
 
             {text && 
               <div className='card-container text-card' id={id}>
-                <span className='text-title'>{text}</span>
+                <div className='text-title'>{text}</div>
               </div>
             }
 

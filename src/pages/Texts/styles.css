@@ -7,6 +7,10 @@
     overflow-y: auto;
 }
 
+.TextTitle{
+    margin-top: 20px;
+}
+
 .texts-content{
     display: flex;
     flex-direction: column;
@@ -27,7 +31,20 @@
     width: 100%;
     
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 
+}
+
+
+@media screen and (max-width: 1030px){
+    .texts-grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .texts-grid-container{
+        grid-template-columns: 1fr;
+    }
 }
