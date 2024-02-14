@@ -9,7 +9,7 @@ export default function Header() {
         <Link to='/' className='home link-page'><span className="material-symbols-outlined home-icon">cottage</span></Link>
         <Link to={'/Words'} className='word link-page'>Words</Link>
         <Link to={'/Texts'} className='text link-page'>Texts</Link>
-        <Link className='sentence link-page'>Sentences</Link>
+        <Link to={'/Sentences'} className='sentence link-page'>Sentences</Link>
         <div></div>
       </div>
       <div></div>

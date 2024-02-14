@@ -2,6 +2,8 @@
 
 .Link-card{
     text-decoration: none;
+    -webkit-user-select: inherit;
+    user-select: inherit;
 }
 
 .card-container{
@@ -54,21 +56,44 @@
     object-fit: contain;
 }
 
-/* text */
+/* texts*/
 
 .text-card{
-    background-color: transparent;
     min-height: 100px;
-    padding-right: 50px;
-    padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .text-title{
-    background-color: transparent;
     font-size: 1.2em;
     font-weight: 700;
     color: var(--titleColor);
 }
 
+/* texts and sentences */
+
+.text-card, .sentence-card{
+    padding-right: 50px;
+    padding-left: 10px;
+}
+
+/* sentences */
+
+.sentence-card{
+    min-height: 180px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sentence-title{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    max-height: 100%;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 125%;
+    color: var(--titleColor);
+    overflow: hidden;
+}
