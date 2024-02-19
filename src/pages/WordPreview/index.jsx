@@ -3,7 +3,8 @@ import Container from '../../components/Container';
 import './styles.css';
 import Button from '../../components/Button';
 import InputSearch from '../../components/InputSearch';
-import Audio from '../../components/Audio';
+import AudioTag from '../../components/audioTag';
+import Player from '../../components/Audio/Player';
 const imagesObject = [
     { 
         id: 1,
@@ -83,7 +84,7 @@ export default function WordPreview() {
 
         
             <Container id={'wordPreview-containerComponent'}>
-                <Audio 
+                <Player 
                     position={'absolute'} 
                     top={'3px'} 
                     left={'3px'} 
@@ -113,7 +114,7 @@ export default function WordPreview() {
                             <div className='ButtonTranslate-wordPreview-container'>
                                 <Button id={'ButtonTranslate-wordPreview'} />
                             </div>
-                            <audio className='audio-sentence-wordPreview' src='' controls autoPlay></audio>
+                            <AudioTag id={'audio-sentence-wordPreview'}/>
                         </div>
                         
                     </div>

@@ -38,7 +38,7 @@ export default function WordsForm() {
               width={'100%'}
             />
 
-            <Link to='/Words'>
+            <Link to='/words'>
             <ButtomSubmit
               value={'Enviar'}
             />

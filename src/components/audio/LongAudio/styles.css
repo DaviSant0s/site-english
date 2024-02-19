@@ -1,0 +1,114 @@
+
+/* audio player */
+
+.audio{
+    display: none;
+}
+
+.audio-container{
+    display: grid;
+    grid-template-columns: 32px 70px 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    
+    outline: 1px solid #d1d1d1a7;
+    border-radius: 50px;
+
+    width: 240px;
+    height: 40px;
+    /* width: 250px;
+    height: 45px; */
+
+    /* width: 300px;
+    height: 50px; */
+    background-color: #f1f3f4;
+    border-radius: 50px;
+}
+
+.play-audio{
+    color: var(--iconsColor);
+    font-size: 1.3em;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    -webkit-user-select: none;
+    user-select: none;
+
+}
+
+.play-audio:hover{
+    background-color: #dee0e4c6;
+
+}
+
+.audio-duration{
+    color: var(--iconsColor);
+    font-size: 0.9em;
+    width: 70px;
+    
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.audio-progress-container{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #c1c2c3;
+    height: 4px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+.audio-progress{
+    z-index: 2;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background: #d2ced761;
+    cursor: pointer;
+}
+
+/* bolinha */
+.audio-progress::-webkit-slider-thumb{
+    position: relative;
+    z-index: 3;
+    appearance: none;
+    display: block;
+    width: 10px;
+    height: 10px;
+    /* width: 12px;
+    height: 12px; */
+    border-radius: 50%;
+    background: #a186ca;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* .audio-progress::-webkit-slider-thumb:hover{
+    background: #a186ca;
+} */
+
+/* rastro */
+.trackAudio{
+    position: absolute;
+    z-index: 1;
+    width: 0%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #a186cad1;
+}

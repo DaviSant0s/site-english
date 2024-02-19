@@ -94,7 +94,6 @@
     padding: 3px;
     font-weight: 600;
     transition: all 0.15s ease-in-out;
-
 }
 
 .arrow-image-wordPreview-left:hover, .arrow-image-wordPreview-right:hover{
@@ -125,11 +124,11 @@
     object-fit: contain;
 }
 
-
 .progressInput-wordPreview{
     width: 250px;
     margin-top: 20px;
 }
+
 .progressInput-wordPreview > input{
     display: block;
     width: 80%;
@@ -204,7 +203,7 @@
 
 
 /* audio sentence */
-.audio-sentence-wordPreview{
+#audio-sentence-wordPreview{
     position: absolute;
     left: 0px;
     bottom: -50px;

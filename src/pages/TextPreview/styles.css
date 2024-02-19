@@ -1,0 +1,50 @@
+.textPreview-container{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+#container-textPreview-component{
+    justify-content: start;
+    align-items: start;
+    gap: 0px;
+
+    width: 60%;
+    background-color: white;
+    min-height: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.buttons-textPreview-container{
+    background-color: transparent;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+
+    padding-right: 10px;
+}
+
+#translate-button-textPreview{
+    height: 40px;
+    width: 150px;
+    font-size: 1em;
+}
+
+#translate-button-textPreview:hover{
+    background-color: #9380b0;
+}
+
+.textPreview-content{
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.textPreview-content > h1 {
+    color: var(--titleColor);
+}

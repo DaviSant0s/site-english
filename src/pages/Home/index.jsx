@@ -10,9 +10,9 @@ export default function Home() {
       <p className='description-home'>Insira as palavras, textos e imagens que você quer aprender no sistema, e tenha um ambiente simplificado para quando você quiser revisar e fixar ainda mais o que você estuda em inglês.  </p>
 
       <div className='pages-buttom-container'>
-        <PageButtom icon={'text_format'} name={'Palavra'} path={'/WordsForm'}/>
-        <PageButtom icon={'format_paragraph'} name={'Texto'} path={'/TextForm'}/>
-        <PageButtom icon={'sms'} name={'Frase'} path={'/SentenceForm'}/>
+        <PageButtom icon={'text_format'} name={'Palavra'} path={'/wordsForm'}/>
+        <PageButtom icon={'format_paragraph'} name={'Texto'} path={'/textForm'}/>
+        <PageButtom icon={'sms'} name={'Frase'} path={'/sentenceForm'}/>
       </div>
     </div>
   )

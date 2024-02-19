@@ -1,18 +1,18 @@
-import Audio from '../Audio';
+import Player from '../Audio/Player';
 import './styles.css';
 import { Link } from 'react-router-dom';
 
 export default function Card({image=false, title, id, text=false, sentence=false}) {
   return (
     <div style={{position: 'relative'}}>
-          <Audio 
+          <Player 
             position={'absolute'} 
             top={'3px'} 
             right={'3px'} 
             width={'45px'} 
             height={'45px'}
           />
-          <Link className='Link-card' to='/WordPreview'>
+          <Link className='Link-card' to='/wordPreview'>
             {image &&
               <div className='card-container image-card' id={id}>
                 <span className='card-title'>{title}</span>
@@ -23,7 +23,7 @@ export default function Card({image=false, title, id, text=false, sentence=false
             }
           </Link>
           
-          <Link className='Link-card' to='/WordPreview'>
+          <Link className='Link-card' to='/textPreview'>
             {text && 
               <div className='card-container text-card' id={id}>
                 <div className='text-title'>{text}</div>
@@ -31,7 +31,7 @@ export default function Card({image=false, title, id, text=false, sentence=false
             }
           </Link>
           
-          <Link className='Link-card' to='/WordPreview'>
+          <Link className='Link-card' to='/wordPreview'>
             {sentence && 
               <div className='card-container sentence-card' id={id}>
                 <div className='sentence-title'>{sentence}</div>

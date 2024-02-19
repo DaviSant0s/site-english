@@ -8,6 +8,7 @@ import Header from '../components/Header';
 import Words from '../pages/Words';
 import Texts from '../pages/Texts';
 import Sentences from '../pages/Sentences';
+import TextPreview from '../pages/TextPreview';
 
 
 export const RoutesApp = () => {
@@ -15,13 +16,14 @@ export const RoutesApp = () => {
         <BrowserRouter>
             <Header/>
             <Routes>
-                <Route path='/WordsForm' element={<WordsForm />}/>
-                <Route path='/SentenceForm' element={<SentenceForm />}/>
-                <Route path='/TextForm' element={<TextForm />}/>
-                <Route path='/Words' element={<Words/>}/>
-                <Route path='/Texts' element={<Texts/>}/>
-                <Route path='/Sentences' element={<Sentences/>}/>
-                <Route path='/WordPreview' element={<WordPreview />}/>
+                <Route path='/wordsForm' element={<WordsForm />}/>
+                <Route path='/sentenceForm' element={<SentenceForm />}/>
+                <Route path='/textForm' element={<TextForm />}/>
+                <Route path='/words' element={<Words/>}/>
+                <Route path='/sentences' element={<Sentences/>}/>
+                <Route path='/texts' element={<Texts/>}/>
+                <Route path='/textPreview' element={<TextPreview/>}/>
+                <Route path='/wordPreview' element={<WordPreview />}/>
                 <Route path='/' exact element={<Home />}/>
             </Routes>
         </BrowserRouter>
