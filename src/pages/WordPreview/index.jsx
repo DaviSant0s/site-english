@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Container from '../../components/Container';
 import './styles.css';
 import Button from '../../components/Button';
 import InputSearch from '../../components/InputSearch';
 import AudioTag from '../../components/audioTag';
+import LongAudio from '../../components/audio/LongAudio'
 import Player from '../../components/Audio/Player';
 const imagesObject = [
     { 
@@ -46,6 +47,12 @@ const imagesObject = [
 export default function WordPreview() {
     const [ indexImage, setIndexImage ] = useState(0);
     const [ image, setImage ] = useState(imagesObject[indexImage].link);
+    const progressRef = useRef();
+
+    useEffect(() => {
+        progressRef.current.value = indexImage + 1
+        
+    }, [indexImage])
 
     const handleClickNextImage = () => {
         if (indexImage >= imagesObject.length - 1){
@@ -105,7 +112,7 @@ export default function WordPreview() {
                             </div>
                             <span onClick={handleClickNextImage} className="material-symbols-outlined arrow-image-wordPreview-right">chevron_right</span>
                         </div>
-                        <div className='progressInput-wordPreview'><input type="range" min='1' max={imagesObject.length } value={indexImage + 1}/></div>
+                        <div className='progressInput-wordPreview'><input type="range" ref={progressRef} min='1' max={imagesObject.length } /></div>
                     </div>
                     
                     <div className='word-sentence-wordPreview-container'>
@@ -114,7 +121,7 @@ export default function WordPreview() {
                             <div className='ButtonTranslate-wordPreview-container'>
                                 <Button id={'ButtonTranslate-wordPreview'} />
                             </div>
-                            <AudioTag id={'audio-sentence-wordPreview'}/>
+                            <LongAudio id={'audio-sentence-wordPreview'}/>
                         </div>
                         
                     </div>

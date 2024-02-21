@@ -63,7 +63,7 @@ export default function InputSelect({width, height, radius='12px', options=[], i
         style={{display: `${displaySelect}`, borderRadius: `${radius * 0.7}px`}}>
 
           <ul>
-            {options.map((option) => <li onClick={handleChangeOption} >{option}</li>)}
+            {options.map((option, index) => <li key={index} onClick={handleChangeOption} >{option}</li>)}
           </ul>
 
         </div>

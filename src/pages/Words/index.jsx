@@ -55,11 +55,13 @@ export default function Words() {
 
           {imagesObject.map( item => {
             return(
-              <Card
-              title={item.name}
-              image={item.link}
-              id={'Words-card-image'}
-          />
+              <div key={item.id}>
+                <Card
+                title={item.name}
+                image={item.link}
+                id={'Words-card-image'}
+                />
+              </div>
             )
           })}
 

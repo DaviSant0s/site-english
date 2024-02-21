@@ -1,4 +1,4 @@
-import Player from '../Audio/Player';
+import Player from '../audio/Player';
 import './styles.css';
 import { Link } from 'react-router-dom';
 

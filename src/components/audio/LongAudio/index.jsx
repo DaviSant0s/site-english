@@ -12,7 +12,7 @@ const catchSeconds = (totalDurationSeconds) => {
   return seconds;
 }
 
-function LongAudio() {
+function LongAudio({ id }) {
   const audioRef = useRef();
   const rangeRef = useRef();
 
@@ -37,16 +37,17 @@ function LongAudio() {
     const second = catchSeconds(totalDuration);
     setSecondsTotal(second);
 
-  }, [totalDuration])
+  }, [totalDuration]);
 
   useEffect(() => {
     if (audioRef.current.currentTime === totalDuration){
       setPlay(s => true)
     }
-  })
+  });
 
-  const handleChangeRange = () => {
-    setCurrentRangeValue(rangeRef.current.value);
+  const handleChangeRange = (e) => {
+    /* e.target.value = rangeRef.current.value; */
+    /* setCurrentRangeValue(rangeRef.current.value); */
     audioRef.current.currentTime = (rangeRef.current.value / 100) * totalDuration;
   }
 
@@ -66,32 +67,54 @@ function LongAudio() {
 
   const handleTimeUpdateAudio = () => {
     const currentDuration = audioRef.current.currentTime;
-    setCurrent(Math.floor((currentDuration / totalDuration) * 100))
+    setCurrent(Math.floor((currentDuration / totalDuration) * 100));
 
     setMinutes(catchMinutes(currentDuration))
     SetSeconds(catchSeconds(currentDuration))
   }
 
   return (
-    <>
-      <audio onLoadedData={handleLoadedData} ref={audioRef} onTimeUpdate={handleTimeUpdateAudio} className='audio' src={audio} controls/>
 
-      <div className='audio-container'>
-        {play && 
-          <span onClick={handleClickPlay} className="material-icons play-audio">play_arrow </span>
-        }
+    <div className='longAudio-container' id={id}>
 
-        {!play && 
-          <span onClick={handleClickPause} className="material-icons play-audio">pause</span>
-        }
+      <audio 
+        onLoadedData={handleLoadedData} 
+        ref={audioRef} 
+        onTimeUpdate={handleTimeUpdateAudio} 
+        className='longAudio-native' 
+        src={audio}
+        controls
+      />
 
-        <div className='audio-duration'>{minutes}:{seconds >= 10 ? seconds : '0' + seconds} / {minutesTotal}:{secondsTotal >= 10 ? secondsTotal : '0' + secondsTotal}</div>
-        <div className='audio-progress-container'>
-          <input onChange={handleChangeRange} ref={rangeRef} type='range' className='audio-progress' value={currentRangeValue} min={0} max={100} />
-          <div style={{width: `${currentRangeValue}%`}} className='trackAudio'></div>
-        </div>
-        </div>
-      </>
+      {play && 
+        <span onClick={handleClickPlay} className="material-icons play-audio-LongAudio">play_arrow </span>
+      }
+
+      {!play && 
+        <span onClick={handleClickPause} className="material-icons play-audio-LongAudio">pause</span>
+      }
+
+      <div className='audio-duration-LongAudio'>
+        {minutes}:{seconds >= 10 ? seconds : '0' + seconds} / {minutesTotal}:{secondsTotal >= 10 ? secondsTotal : '0' + secondsTotal}
+      </div>
+
+      <div className='audio-progress-container-LongAudio'>
+
+        <input 
+          onChange={handleChangeRange} 
+          ref={rangeRef} type='range' 
+          className='audio-progress-LongAudio' 
+          value={currentRangeValue}  
+          min={0} 
+          max={100} 
+        />
+
+        <div style={{width: `${currentRangeValue}%`}} className='trackAudio-LongAudio'></div>
+
+      </div>
+
+    </div>
+      
   )
 }
 
