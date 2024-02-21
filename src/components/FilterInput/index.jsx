@@ -9,7 +9,7 @@ export default function FilterInput({placeholder, width, height, radius, id, nam
       style={{
         width: `${width}`, 
         height: `${height}`, 
-        borderRadius: `${radius}`,
+        borderRadius: `${radius}`
       }} 
       
       id={idContainer}

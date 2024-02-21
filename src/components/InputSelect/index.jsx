@@ -1,7 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './styles.css';
 
 export default function InputSelect({width, height, radius='12px', options=[], id}) {
+
+  const DisplayBody_Ref = useRef();
+
   const [ displaySelect, setDisplaySelect ] = useState('none');
   const [ selectOption, setSelectOption ] = useState(options[0]);
 
@@ -20,11 +23,27 @@ export default function InputSelect({width, height, radius='12px', options=[], i
     
   }
 
+  const handleClickOut = (e) => {
+    if(!DisplayBody_Ref.current.contains(e.target)){
+      setDisplaySelect('none');
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOut);
+
+    return () => {
+      document.removeEventListener('click', handleClickOut);
+    };
+
+  }, []);
+
   return (
 
 
     <div 
       className='inputSelect-container' 
+      ref={DisplayBody_Ref}
       id={id}
       style={{width: `${width}`, height: `${height}`, borderRadius: `${radius}px`}}>
 
