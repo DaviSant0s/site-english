@@ -10,7 +10,8 @@ body{
 }
 
 :root{
-  --heightHeader:  40px;
+  --heightHeader:  50px;
+  /* --heightHeader:  40px; */
   --mainColor: #13a49d;
   --inputColor: #444546;
   --titleColor: #383838;
@@ -35,6 +36,10 @@ body{
 .SelectNone{
   -webkit-user-select: none;
   user-select: none;
+}
+
+.Link{
+  text-decoration: none;
 }
 
 

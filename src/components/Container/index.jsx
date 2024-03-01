@@ -13,7 +13,7 @@ export default function Container({children, width, height, background, display,
         alignItems: `${alignItems}`,
         gap: `${gap}`
       }} 
-      className='container'
+      className='container-component'
       id={id}
     >
 

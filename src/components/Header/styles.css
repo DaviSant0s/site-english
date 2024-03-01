@@ -1,14 +1,31 @@
 .header-container{
-    background-color: transparent;
+    width: 100%;
+    height: var(--heightHeader);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 1px solid #4646462b; */
+}
+
+/* sideBar ativada */
+.header-content-sideBarOn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 15px;
+    width: 100%;
+}
+
+/* sideBar desativada */
+.header-content-sideBarOff{
     display: grid;
     grid-template-columns: 478px 1fr;
     width: 100%;
-    height: var(--heightHeader);
-    padding-top: 5px;
 }
 
-.header-content{
-    background-color: transparent;
+.header-content-pages{
     display: grid;
     grid-template-columns: 0.25fr 1fr 1fr 1fr 1fr  0.25fr;
     gap: 10px;
@@ -20,42 +37,51 @@
     align-items: center;
     cursor: pointer;
 
+    height: 35px;
+
     color: #464646;
     font-size: 16px;
 
     border-radius: 2px;
-    text-decoration: none;
 
     transition: all 0.2s ease-in-out;
-
-    -webkit-user-select: none;
-    user-select: none;
 }
 
-.header-content > .link-page:hover{
+.header-content-pages .link-page:hover{
     background-color: #e3e5e7;
     color: #0e908a;
 }
 
-.header-content > .home > .home-icon{
+.header-content-pages .home {
     font-size: 22px;
 }
 
-@media screen and (max-width: 506px){
-    .header-container{
-        grid-template-columns: 1fr 0px;
-    }
+.profile-header-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-right: 27px;
 
-    .header-content{
-        grid-template-columns: 0fr 1fr 1fr 1fr 1fr  0.25fr;
-    }
+    width: 100%;
+    height: 100%;
 }
-/* @media screen and (max-width: 478px){
-    .header-container{
-        grid-template-columns: 1fr 0px;
-    }
 
-    .header-content{
-        grid-template-columns: 0fr 1fr 1fr 1fr 1fr  0.25fr;
-    }
-} */
+.profile-photo-header{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    outline: 1px solid #d1d1d1;
+}
+
+.profile-name{
+    font-size: 16px;
+    color: #464646;
+
+    -webkit-user-select: none;
+    user-select: none;
+
+    cursor: pointer;
+}

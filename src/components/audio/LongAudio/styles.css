@@ -74,7 +74,7 @@
     height: 100%;
     width: 100%;
     border-radius: 20px;
-    background: #d2ced761;
+    background: #d2ced708;
     cursor: pointer;
 }
 
@@ -87,10 +87,13 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #a186ca;
     cursor: pointer;
 
     transition: background-color 0.3s ease-in-out;
+}
+
+.audio-progress-LongAudio::-webkit-slider-thumb:hover{
+    background: #a186ca;
 }
 
 /* rastro */

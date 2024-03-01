@@ -1,50 +1,105 @@
 .textPreview-container{
     display: flex;
-    justify-content: center;
-    align-items: top;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow-y: auto;
 }
 
 #container-textPreview-component{
-    justify-content: start;
-    align-items: start;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 0px;
 
-    width: 60%;
+    width: 900px;
+    min-height: 50%;
     background-color: white;
-    min-height: 90%;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
 .buttons-textPreview-container{
-    background-color: transparent;
-    width: 100%;
-    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
     gap: 10px;
 
-    padding-right: 10px;
+    width: 100%;
+    height: 60px;
+
+    padding-right: 7px;
 }
 
-#translate-button-textPreview{
+
+.textPreview-content{
+    padding: 0 20px 20px 20px;
+    margin-top: 20px;
+}
+
+.textPreview-content > h1, 
+.textPreview-content > p {
+    color: var(--titleColor);
+}
+
+
+.textPreview-content > p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    line-height: 130%;
+    font-size: 1.3em;
+}
+
+#audio-TextPreview{
+    /* background-color: transparent;
+    outline: none; */
+}
+
+
+@media screen and (max-width: 980px) {
+    #container-textPreview-component{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .textPreview-content > p{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .textPreview-content > p{
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #translate-button-textPreview{
     height: 40px;
     width: 150px;
     font-size: 1em;
-}
+} */
 
-#translate-button-textPreview:hover{
+/* #translate-button-textPreview:hover{
     background-color: #9380b0;
-}
-
-.textPreview-content{
-    height: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.textPreview-content > h1 {
-    color: var(--titleColor);
-}
+} */

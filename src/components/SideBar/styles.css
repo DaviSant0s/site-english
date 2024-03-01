@@ -1,0 +1,50 @@
+.sideBar-container{
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  left: -45%;
+  width: 45%;
+  height: 100%;
+  background-color: #90AEB8;
+  background-color: white;
+  border-radius: 0 10px 0 0;
+
+  transition: all 0.35s ease-in-out;
+}
+
+.title-SideBar-container{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+}
+
+.button-menu-SideBar-position{
+  position: relative;
+  right: -50px;
+}
+
+.button-menu-SideBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #595858;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.button-menu-SideBar:hover{
+  background-color: #dbdce19d;
+  color: var(--iconHover);
+}
