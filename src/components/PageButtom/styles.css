@@ -1,11 +1,10 @@
 :root {
-
     --widthPageButtom: 165px;
-    /* --heightPageButtom: 168px; */
     --heightPageButtom: calc(var(--widthPageButtom) * 1.018);
 
     --fontSizeIcon: calc(var(--heightPageButtom) * 0.20);
-    --fontSizeName: calc(var(--heightPageButtom) * 0.08);
+    --fontSizeName: calc(var(--heightPageButtom) * 0.1);
+    /* --fontSizeName: calc(var(--heightPageButtom) * 0.08); */
 }
 
 .button-pageButtom{
@@ -34,10 +33,13 @@
     transition: all 0.2s ease-out;
     -webkit-user-select: none;
     user-select: none;
+
+    color: #aaaaaa;
 }
 
 .PageButtom-container:hover{
     box-shadow: 1px 1px 14px #a4a6a9;
+    color: rgba(14, 144, 138, 0.608);
 }
 
 .PageButtom-icon, .PageButtom-name{
@@ -54,8 +56,9 @@
 
 .PageButtom-icon > .icon{
     color: #aaaaaa;
+    color: inherit;
     font-size: var(--fontSizeIcon);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .PageButtom-name{

@@ -33,9 +33,8 @@ export default function Header() {
             </Link>
           
             <Link to={'/sentences'} className='Link'>
-              <span className='sentence link-page'>Sentences</span>
+              <span className='sentence link-page'>Phrases</span>
             </Link>
-            {isSmallScreen && console.log('oieeee')}
           
             <div></div>
           </nav>

@@ -27,7 +27,6 @@
 }
 
 .pages-buttom-container{
-    /* background-color: red; */
     width: 100%;
 
     display: flex;
@@ -35,11 +34,9 @@
     justify-content: center;
     align-items: center;
     margin-top: 40px;
-   /*  gap: 40px; */
-   gap: 2.4%;
+    gap: 2.4%;
     
 }
-
 
 
 @media screen and (max-width: 960px){

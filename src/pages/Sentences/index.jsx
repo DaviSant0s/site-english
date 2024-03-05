@@ -5,7 +5,7 @@ import Card from '../../components/Card';
 export default function Sentences() {
   return (
     <div className='sentences-container defaultContainerDimension'>
-        <h1 className='sentenceTitle mainTitle'>Sentences</h1>
+        <h1 className='sentenceTitle mainTitle'>Phrases</h1>
         <div className='sentences-content'>
           <FilterInput
             placeholder={'Search'}
