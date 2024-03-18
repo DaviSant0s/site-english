@@ -131,3 +131,8 @@
   background-color: #e3e5e7;
   color: #0e908a;
 }
+
+.sideBar-container > nav {
+  -webkit-user-select: none;
+  user-select: none;
+}

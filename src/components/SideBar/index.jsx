@@ -69,7 +69,7 @@ export default function SideBar({ id }) {
         }
 
         <Link to='/' className='Link'>
-          <nav className='sidebar-content-page-title'>
+          <nav onClick={handleClickCloseSideBar} className='sidebar-content-page-title'>
               <span className="material-symbols-outlined icon-sideBar">cottage</span>
               <span className='home-name'>Home</span>
           </nav>
@@ -78,21 +78,21 @@ export default function SideBar({ id }) {
       <nav className='sidebar-content-pages'>
           
             <Link to={'/words'} className='Link'>
-              <span className='word-sideBar link-page-sideBar'>
+              <span onClick={handleClickCloseSideBar} className='word-sideBar link-page-sideBar'>
                 <span className="material-symbols-outlined icon-sideBar">edit_square</span>
                 Words
               </span>
             </Link>
           
             <Link to={'/texts'} className='Link'>
-              <span className='text-sideBar link-page-sideBar'>
+              <span onClick={handleClickCloseSideBar} className='text-sideBar link-page-sideBar'>
                 <span className="material-symbols-outlined icon-sideBar">menu_book</span>
                 Texts
               </span>
             </Link>
           
             <Link to={'/sentences'} className='Link'>
-              <span className='sentence-sideBar link-page-sideBar'>
+              <span onClick={handleClickCloseSideBar} className='sentence-sideBar link-page-sideBar'>
                 <span className="material-symbols-outlined icon-sideBar">Sms</span>
                 Phrases
               </span>
