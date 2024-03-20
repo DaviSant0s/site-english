@@ -1,7 +1,7 @@
 import './styles.css';
 import '../styles/Input/styles.css';
 
-export default function InputSearch({width, height, type, name, id, placeholder, idContainer, iconSide='left', radius }) {
+export default function InputSearch({width, height, type, name, id, placeholder, idContainer, iconSide='left', radius, icon='search', onChange, ref, style_icon={} }) {
   return (
     <>
 
@@ -11,9 +11,9 @@ export default function InputSearch({width, height, type, name, id, placeholder,
         
         <div className='inputSearch-component-container' style={{width: `${width}`, height: `${height}`, borderRadius: `${radius}`}} id={idContainer}>
 
-            <input className="inputSearch-component-content inputSearch-component-content-left" type={type} name={name} id={id} placeholder={placeholder} style={{borderRadius: `${radius}`}} />
+            <input ref={ref} onChange={onChange} className="inputSearch-component-content inputSearch-component-content-left" type={type} name={name} id={id} placeholder={placeholder} style={{borderRadius: `${radius}`}} />
 
-            <span className="material-symbols-outlined search-icon-left">search</span>
+            <span style={style_icon} className="material-symbols-outlined search-icon-left">{icon}</span>
 
         </div>
         
@@ -24,8 +24,8 @@ export default function InputSearch({width, height, type, name, id, placeholder,
         iconSide === 'right' && 
         
         <div className='inputSearch-component-container' style={{width: `${width}`, height: `${height}`, borderRadius: `${radius}`}} id={idContainer}>
-            <input className="inputSearch-component-content inputSearch-component-content-right" type={type} name={name} id={id} placeholder={placeholder} style={{borderRadius: `${radius}`}} />
-            <span className="material-symbols-outlined search-icon-right">search</span>
+            <input onChange={onChange} className="inputSearch-component-content inputSearch-component-content-right" type={type} name={name} id={id} placeholder={placeholder} style={{borderRadius: `${radius}`}} />
+            <span style={style_icon} className="material-symbols-outlined search-icon-right">{icon}</span>
         </div>
         
         }

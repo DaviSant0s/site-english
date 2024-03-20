@@ -1,6 +1,6 @@
 import Player from '../audio/Player';
-import './styles.css';
 import { Link } from 'react-router-dom';
+import './styles.css';
 
 export default function Card({image=false, title, id, text=false, sentence=false}) {
   return (

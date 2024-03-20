@@ -136,3 +136,17 @@
   -webkit-user-select: none;
   user-select: none;
 }
+
+@media screen and (max-width: 410px){
+  .sideBar-container{
+    left: -150px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .sideBar-container{
+    left: -130px;
+    width: 130px;
+  }
+}

@@ -1,6 +1,6 @@
-import './styles.css';
 import FilterInput from '../../components/FilterInput';
 import Card from '../../components/Card';
+import './styles.css';
 
 export default function Sentences() {
   return (
@@ -14,63 +14,83 @@ export default function Sentences() {
 
           <div className='sentences-grid-container'>
             <Card  
-              sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário, A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário, A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário, A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário.'}
-            />
-            <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário, A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário.'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
+              sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário, A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário.'}
+            />
+            <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
             <Card  
+              id={'card-sentence-sentencesPage'}
               sentence={' A Saga Épica da Busca pelo Tesouro Memórias de um Viajante Solitário'}
             />
           </div>
