@@ -27,14 +27,56 @@
     width: 400px;
 }
 
+.search-image-container-wordforms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
 #input-image-link{
     width: 100%;
     border-radius: 10px;
     box-shadow: none;
     height: 35px;
     border-radius: 5px;
-    
 }
+
+.suggest-image-wordforms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    color: #444546f5;
+    width: 70px;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #c6c6c69f;
+
+    font-size: 0.8em;
+
+    cursor: pointer;
+
+    transition: background-color 0.1s ease-in-out;
+}
+
+.suggest-image-wordforms:hover{
+    background-color: #e9efef;
+}
+
+.suggest-image-wordforms > img {
+    width: 38%;
+    object-fit: contain;
+    transform: rotate(40deg);
+
+    /* transition: all s ease-in-out; */
+}
+
+.suggest-image-wordforms > img:active{
+    transform: rotate(80deg);
+}
+
 
 .image-container-input-wordForm{
     display: flex;
@@ -49,6 +91,7 @@
     overflow: hidden;
 
     background-color: #9cbdbc23;
+    background-color: #9cbdbc15;
 }
 
 .image-container-input-wordForm > img {

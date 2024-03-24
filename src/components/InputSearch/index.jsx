@@ -1,7 +1,7 @@
 import './styles.css';
 import '../styles/Input/styles.css';
 
-export default function InputSearch({width, height, type, name, id, placeholder, idContainer, iconSide='left', radius, icon='search', onChange, ref, style_icon={} }) {
+export default function InputSearch({width, height, type, name, id, placeholder, idContainer, iconSide='left', radius, icon='search', onChange, ref, style_icon={}, value }) {
   return (
     <>
 

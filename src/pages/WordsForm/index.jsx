@@ -7,14 +7,21 @@ import { Link } from 'react-router-dom';
 import './styles.css';
 import InputSearch from '../../components/InputSearch';
 import { useEffect, useRef, useState } from 'react';
+import dado from '../../assets/dado.png'
 
 export default function WordsForm() {
+  const imageName_Ref = useRef();
 
   const [ imgDisplay, setImgDisplay ] = useState({});
   const [ noImageDisplay, setNoImageDisplay ] = useState({});
   const [ fixedImage, setFixedImage ] = useState('');
   const [ imageLink, setImageLink ] = useState('');
   const [ styleIconLink, setStyleIconLink ] = useState({});
+  const [ randomImageValue, setRandomImageValue ] = useState('');
+
+  const handleClickSuggestImage = () => {
+    setImageLink(`https://source.unsplash.com/800x600/?${imageName_Ref.current.value}?`)
+  }
 
   const handleOnload = (e) => {
 
@@ -65,8 +72,8 @@ export default function WordsForm() {
               id={'word'} 
               placeholder={'Palavra'} 
               autoComplete={'off'} 
-
               width={'100%'}
+              ref={imageName_Ref}
             /> 
 
             <Textarea
@@ -77,15 +84,21 @@ export default function WordsForm() {
               width={'100%'}
             />
 
-            <InputSearch
-              idContainer={'input-image-link'}
-              id={'input-image-link'}
-              icon='Link'
-              placeholder={'Link da imagem'}
-              name={'link'}
-              onChange={handleOnChangeLink}
-              style_icon={styleIconLink}
-            />
+            <div className='search-image-container-wordforms'>
+              <InputSearch
+                idContainer={'input-image-link'}
+                id={'input-image-link'}
+                icon='Link'
+                placeholder={'Link da imagem'}
+                name={'link'}
+                onChange={handleOnChangeLink}
+                style_icon={styleIconLink}
+              />
+
+              <div onClick={handleClickSuggestImage} className='suggest-image-wordforms'>
+                <img src={dado} alt="" className='SelectNone' />
+              </div>
+            </div>
 
             <div className='image-container-input-wordForm'>
               
