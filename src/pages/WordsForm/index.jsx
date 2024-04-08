@@ -6,21 +6,27 @@ import Textarea from '../../components/Textarea';
 import { Link } from 'react-router-dom';
 import './styles.css';
 import InputSearch from '../../components/InputSearch';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import dado from '../../assets/dado.png'
 
 export default function WordsForm() {
-  const imageName_Ref = useRef();
+  /* const imageName_Ref = useRef(); */
 
   const [ imgDisplay, setImgDisplay ] = useState({});
   const [ noImageDisplay, setNoImageDisplay ] = useState({});
   const [ fixedImage, setFixedImage ] = useState('');
   const [ imageLink, setImageLink ] = useState('');
   const [ styleIconLink, setStyleIconLink ] = useState({});
+  const [ inputRef, setInputRef ] = useState(null);
   const [ randomImageValue, setRandomImageValue ] = useState('');
 
   const handleClickSuggestImage = () => {
-    setImageLink(`https://source.unsplash.com/800x600/?${imageName_Ref.current.value}?`)
+    console.log(inputRef.current.value);
+    setImageLink(`https://source.unsplash.com/800x600/?${inputRef.current.value}?`);
+  }
+
+  const getRefInputContainer = (ref) => {
+    setInputRef(ref);
   }
 
   const handleOnload = (e) => {
@@ -73,7 +79,7 @@ export default function WordsForm() {
               placeholder={'Palavra'} 
               autoComplete={'off'} 
               width={'100%'}
-              ref={imageName_Ref}
+              function_aux={getRefInputContainer}
             /> 
 
             <Textarea
@@ -96,7 +102,7 @@ export default function WordsForm() {
               />
 
               <div onClick={handleClickSuggestImage} className='suggest-image-wordforms'>
-                <img src={dado} alt="" className='SelectNone' />
+                <img src={dado} alt="dado" className='SelectNone' />
               </div>
             </div>
 
